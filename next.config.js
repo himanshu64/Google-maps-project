@@ -83,7 +83,13 @@ module.exports = withBundleAnalyzer({
         'react-dom/test-utils': 'preact/test-utils',
         'react-dom': 'preact/compat',
      })
+     
     }
+
+    if (!isServer) {
+      config.resolve.fallback.fs = false
+    }
+
 
     return config
   },
