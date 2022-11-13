@@ -37,7 +37,6 @@ export default function LandingHome() {
       lng: 0,
     },
   })
-  console.log(process.env.NEXT_PUBLIC_MAP_API_KEY)
 
 
   const [playTrack, setPlayTrack] = useState({
@@ -117,7 +116,7 @@ export default function LandingHome() {
       },
     }))
 
-    console.log(currentLocation.center.lat)
+
     let center = new window.google.maps.LatLng(position.coords.latitude, position.coords.longitude)
     var marker = new window.google.maps.Marker({
       position: currentLocation,

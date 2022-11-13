@@ -23,10 +23,10 @@ export default function MapTour() {
     visible: true,
   }
 
-  console.lo
+
 
   const handleApiLoaded = (map, maps) => {
-    console.log('storyAudio', storyAudio)
+  
     let infowindow = new maps.InfoWindow()
     for (let i = 0; i < storyAudio.length; i++) {
       // init markers
