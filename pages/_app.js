@@ -10,7 +10,7 @@ import siteMetadata from '@/data/siteMetadata'
 import Analytics from '@/components/analytics'
 
 import { ClientReload } from '@/components/ClientReload'
-require('dotenv')
+require('dotenv').config()
 const isDevelopment = process.env.NODE_ENV === 'development'
 const isSocket = process.env.SOCKET
 

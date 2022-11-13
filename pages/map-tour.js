@@ -135,7 +135,7 @@ export default function MapTour() {
           className={'absolute bottom-0 left-0 right-0 top-0 z-0 bg-transparent'}
         >
           <GoogleMapReact
-            bootstrapURLKeys={{ key: process.env.MAP_API_KEY, mapIds: [process.env.MAP_ID], }}
+            bootstrapURLKeys={{ key: process.env.NEXT_MAP_API_KEY, mapIds: [process.env.NEXT_MAP_ID], }}
             defaultCenter={defaultProps.center}
             defaultZoom={defaultProps.zoom}
             yesIWantToUseGoogleMapApiInternals
@@ -144,12 +144,12 @@ export default function MapTour() {
             // style={styles}
             ref={mapRef}
             options={{
-              styles: styles,
+              // styles: styles,
               disableDefaultUI: false,
               mapTypeControl: false,
               streetViewControl: true,
               draggable: true,
-              mapId:process.env.MAP_ID
+              mapId:process.env.NEXT_MAP_ID
             }}
           ></GoogleMapReact>
         </main>

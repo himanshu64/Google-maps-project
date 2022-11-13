@@ -239,7 +239,7 @@ export default function LandingHome() {
             className={'absolute bottom-0 left-0 right-0 top-0 z-0 bg-transparent'}
           >
             <GoogleMapReact
-              bootstrapURLKeys={{ key: process.env.MAP_API_KEY, mapIds: [process.env.MAP_ID] }}
+              bootstrapURLKeys={{ key: process.env.NEXT_MAP_API_KEY, mapIds: [process.env.NEXT_MAP_ID] }}
               defaultCenter={defaultProps.center}
               defaultZoom={defaultProps.zoom}
               yesIWantToUseGoogleMapApiInternals
@@ -251,7 +251,7 @@ export default function LandingHome() {
                 mapTypeControl: false,
                 streetViewControl: true,
                 draggable: false,
-                mapId: process.env.MAP_ID
+                mapId: process.env.NEXT_MAP_ID
               }}
             >
               <MarkerStatic show={true} />
