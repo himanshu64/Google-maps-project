@@ -251,6 +251,7 @@ export default function LandingHome() {
                 mapTypeControl: false,
                 streetViewControl: true,
                 draggable: false,
+                mapId: process.env.MAP_ID
               }}
             >
               <MarkerStatic show={true} />

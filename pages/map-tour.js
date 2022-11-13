@@ -149,6 +149,7 @@ export default function MapTour() {
               mapTypeControl: false,
               streetViewControl: true,
               draggable: true,
+              mapId:process.env.MAP_ID
             }}
           ></GoogleMapReact>
         </main>
