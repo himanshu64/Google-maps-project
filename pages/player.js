@@ -1,8 +1,8 @@
 // import { useState } from 'react'
 // import SectionContainer from '@/components/SectionContainer'
 
-const PlayerWidget = ({children}) => {
-    return <></>
+const PlayerWidget = () => {
+  return <></>
 }
 export default PlayerWidget
 // const PlayerWidget = ({children}) => {

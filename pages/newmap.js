@@ -11,7 +11,7 @@
 // import MapEventMarker from '@/components/googlekmaps/mapeventmarker'
 // import isEmpty from 'lodash.isempty'
 
-const NewMapTour = ({children}) => {
+const NewMapTour = () => {
   return <></>
 }
 export default NewMapTour
@@ -220,9 +220,8 @@ export default NewMapTour
 //     });
 //   };
 
-
 //   render() {
-    
+
 //     const { stories } = this.state
 //     console.log("stories", stories)
 //     let defaultProps = {

@@ -63,9 +63,7 @@ export default function MapTour() {
                 Math.floor(storyAudio[i].duration_in_secs / 60) +
                 ' min</button>' +
                 ' <button style="display:none" class="rounded-full bg-[#E1F1FF] mt-4 p-2 font-normal">' +
-                 +
-                ' min</button>' +
-
+                +' min</button>' +
                 '</div>',
             })
             playAudioSong(storyAudio[i].audio_url)
@@ -118,9 +116,7 @@ export default function MapTour() {
     console.log(storyAudio)
   }
 
-  const onStoryClick = () => {
-
-  }
+  const onStoryClick = () => {}
 
   return (
     <>
