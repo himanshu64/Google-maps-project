@@ -46,32 +46,6 @@ export default function LandingHome() {
     isPlaying: false,
   })
 
-  const playPause = () => {
-    // Get state of song
-    let isPlaying = playTrack.isPlaying
-    console.log('isPlaying', isPlaying)
-
-    if (isPlaying) {
-      // Pause the song if it is playing
-      playTrack.audio.pause()
-    } else {
-      // Play the song if it is paused
-      playTrack.audio =
-        // let promise = playTrack.audio.play()
-        console.log(playTrack.audio)
-
-      if (promise !== undefined) {
-        promise
-          .then(() => {
-            console.log('paly audio')
-          })
-          .catch((error) => console.error)
-      }
-    }
-
-    setPlayTrack({ ...playTrack, isPlaying: !isPlaying })
-  }
-
   //   const playAudio = () => {
   //    let audio = typeof Audio !== 'undefined' && new Audio('/static/music1.mp3')
   //    audio.autoplay = true;

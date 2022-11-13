@@ -28,11 +28,11 @@ export default function MapTour() {
 
   const handleApiLoaded = (map, maps) => {
     console.log('storyAudio', storyAudio)
-    let infowindow = new google.maps.InfoWindow()
+    let infowindow = new maps.InfoWindow()
     for (let i = 0; i < storyAudio.length; i++) {
       // init markers
-      let marker = new google.maps.Marker({
-        position: new google.maps.LatLng(storyAudio[i].lat, storyAudio[i].lng),
+      let marker = new maps.Marker({
+        position: new maps.LatLng(storyAudio[i].lat, storyAudio[i].lng),
         map: map,
         title: 'Click Me ' + i,
       })
@@ -43,7 +43,7 @@ export default function MapTour() {
         let infoWindow
         maps.event.addListener(marker, 'click', function () {
           if (!marker.open) {
-            infoWindow = new google.maps.InfoWindow({
+            infoWindow = new maps.InfoWindow({
               close: () => {
                 var ourAudio = document.getElementById('audio')
                 ourAudio.pause()
@@ -76,7 +76,7 @@ export default function MapTour() {
             infoWindow.close()
             console.log('close')
           }
-          google.maps.event.addListener(map, 'click', function (event) {
+          maps.event.addListener(map, 'click', function (event) {
             infoWindow.close()
           })
         })
