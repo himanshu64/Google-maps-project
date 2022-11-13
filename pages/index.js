@@ -37,8 +37,8 @@ export default function LandingHome() {
       lng: 0,
     },
   })
-  console.log(process.env.NEXT_MAP_API_KEY)
-  
+  console.log(process.env.NEXT_PUBLIC_MAP_API_KEY)
+
 
   const [playTrack, setPlayTrack] = useState({
     // Get audio file in a variable
@@ -241,7 +241,7 @@ export default function LandingHome() {
             className={'absolute bottom-0 left-0 right-0 top-0 z-0 bg-transparent'}
           >
             <GoogleMapReact
-              bootstrapURLKeys={{ key: process.env.NEXT_MAP_API_KEY, mapIds: [process.env.NEXT_MAP_ID] }}
+              bootstrapURLKeys={{ key: process.env.NEXT_PUBLIC_MAP_API_KEY, mapIds: [process.env.NEXT_PUBLIC_MAP_ID] }}
               defaultCenter={defaultProps.center}
               defaultZoom={defaultProps.zoom}
               yesIWantToUseGoogleMapApiInternals
@@ -253,7 +253,7 @@ export default function LandingHome() {
                 mapTypeControl: false,
                 streetViewControl: true,
                 draggable: false,
-                mapId: process.env.NEXT_MAP_ID
+                mapId: process.env.NEXT_PUBLIC_MAP_ID
               }}
             >
               <MarkerStatic show={true} />
