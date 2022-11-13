@@ -11,6 +11,11 @@
 // import MapEventMarker from '@/components/googlekmaps/mapeventmarker'
 // import isEmpty from 'lodash.isempty'
 
+const NewMapTour = ({children}) => {
+  return <></>
+}
+export default NewMapTour
+
 // // export default function NewMapTour() {
 // //   const [markers, setMarkers] = useState([])
 

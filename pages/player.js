@@ -1,7 +1,10 @@
 // import { useState } from 'react'
 // import SectionContainer from '@/components/SectionContainer'
 
-
+const PlayerWidget = ({children}) => {
+    return <></>
+}
+export default PlayerWidget
 // const PlayerWidget = ({children}) => {
 //   const [state, setState] = useState({
 //     audioPlayer: typeof Audio !== 'undefined' && new Audio(),
