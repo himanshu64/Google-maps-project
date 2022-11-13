@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body{
+  font-family: 'Poppins', sans-serif;
+}
+
+
+.task-list-item::before {
+  @apply hidden;
+}
+
+.task-list-item {
+  @apply list-none;
+}
+
+.footnotes {
+  @apply pt-8 mt-12 border-t border-gray-200 dark:border-gray-700;
+}
+
+.csl-entry {
+  @apply my-5;
+}
+
+/* https://stackoverflow.com/questions/61083813/how-to-avoid-internal-autofill-selected-style-to-be-applied */
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+  transition: background-color 600000s 0s, color 600000s 0s;
+}
+
+
+.button-shadow{
+  -webkit-box-shadow: 2px 4px 0px 0px rgba(235,128,3,1);
+-moz-box-shadow: 2px 4px 0px 0px rgba(235,128,3,1);
+box-shadow: 2px 4px 0px 0px rgba(235,128,3,1);
+}
+
+.info-window{
+  /* position: relative; */
+  /* bottom: 150;
+  left: '-45px'; */
+  width: 300px;
+  height: 270px;
+  background-color: 'white';
+  box-shadow: '0 2px 7px 1px rgba(0, 0, 0, 0.3)';
+  padding: 20;
+  font-size: 14;
+  z-index: 100;
+  border-radius: 20 + 'px';
+}
+.info-window-slider{
+  /* position: relative; */
+  /* bottom: 150;
+  left: '-45px'; */
+  width: 100%;
+
+  background-color: 'white';
+  box-shadow: '0 2px 7px 1px rgba(0, 0, 0, 0.3)';
+  padding: 20;
+  font-size: 14;
+  z-index: 100;
+  border-radius: 20 + 'px';
+}
+
+.info-scroll {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
