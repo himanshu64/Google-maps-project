@@ -140,7 +140,7 @@ export default function MapTour() {
           className={'absolute bottom-0 left-0 right-0 top-0 z-0 bg-transparent'}
         >
           <GoogleMapReact
-            bootstrapURLKeys={{ key: 'AIzaSyCzWjCqkm_oyyujQd13vg7QEQlumHnXZ_o' }}
+            bootstrapURLKeys={{ key: process.env.MAP_API_KEY }}
             defaultCenter={defaultProps.center}
             defaultZoom={defaultProps.zoom}
             yesIWantToUseGoogleMapApiInternals
