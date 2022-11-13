@@ -6,7 +6,7 @@ module.exports = {
     node: true,
     es6: true,
   },
-  extends: [ 'plugin:prettier/recommended', , 'next/core-web-vitals'],
+  extends: ['plugin:prettier/recommended', 'next/core-web-vitals'],
   rules: {
     'prettier/prettier': 'error',
     'react/react-in-jsx-scope': 'off',
