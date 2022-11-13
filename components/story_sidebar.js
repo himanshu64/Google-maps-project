@@ -49,11 +49,11 @@ const StorySidebar = (props) => {
         </svg>
       </button> */}
       <div
-        className={`fixed top-0 right-0 z-10 snap-y h-full w-1/4  transform bg-gray-200 opacity-95 duration-300 ease-in-out dark:bg-gray-800 ${
+        className={`fixed top-0 right-0 z-10 h-full w-1/4 transform  snap-y bg-gray-200 opacity-95 duration-300 ease-in-out dark:bg-gray-800 ${
           navShow ? 'translate-x-0' : 'translate-x-full'
         }`}
       >
-        <nav className="fixed mt-8 h-full w-full p-2 info-scroll pb-6 ">
+        <nav className="info-scroll fixed mt-8 h-full w-full p-2 pb-6 ">
           {stories.map((story) => (
             // <div key={link.title} className="px-12 py-4">
             //   <Link
@@ -70,16 +70,16 @@ const StorySidebar = (props) => {
             //   </div>
             //   <div class="w-1/2 ... ">w-1/2</div>
             // </div>
-            <Link href="/map-tour">
-            <div class="info-window-slider pb-6">
-              {' '}
-              <img src={story.image_url} class="h-[100] w-full rounded-md" alt="" />
-              <div class="pt-2 text-xl font-bold">{story.title}</div>
-              <div class="pt-2 text-xs font-normal">{story.summary}</div>
-              <button class="mt-4 rounded-full bg-[#E1F1FF] p-2 font-normal">
-                {Math.floor(story.duration_in_secs / 60)} min
-              </button>
-            </div>
+            <Link href="/map-tour" key={story.id}>
+              <div className="info-window-slider pb-6">
+                {' '}
+                <img src={story.image_url} className="h-[100] w-full rounded-md" alt="" />
+                <div className="pt-2 text-xl font-bold">{story.title}</div>
+                <div className="pt-2 text-xs font-normal">{story.summary}</div>
+                <button className="mt-4 rounded-full bg-[#E1F1FF] p-2 font-normal">
+                  {Math.floor(story.duration_in_secs / 60)} min
+                </button>
+              </div>
             </Link>
           ))}
         </nav>

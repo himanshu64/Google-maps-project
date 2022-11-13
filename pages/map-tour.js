@@ -1,7 +1,6 @@
 import React, { useRef, useState, useEffect } from 'react'
 import Image from 'next/image'
 import Link from '@/components/Link'
-import imageUrl from 'data/map-marker-512.png'
 import GoogleMapReact from 'google-map-react'
 import HomeIcon from '../data/home.svg'
 import MusicIcon from '../data/music.svg'

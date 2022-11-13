@@ -32,7 +32,7 @@ function PlayerControls() {
               <span className="pl-2 text-xs font-medium uppercase text-gray-700">02:00/04:00</span>
             </div> */}
             <div>
-              <button class="rounded-full bg-white  p-2 font-normal">Listen Next Story </button>
+              <button className="rounded-full bg-white  p-2 font-normal">Listen Next Story </button>
             </div>
           </div>
         </div>

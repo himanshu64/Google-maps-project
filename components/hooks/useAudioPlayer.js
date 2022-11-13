@@ -5,10 +5,10 @@ const useMusicPlayer = () => {
   const [state, setState] = useContext(MusicContext)
 
   function playTrack() {
-      state.audioPlayer.pause()
-      state.audioPlayer = new Audio(state.track.file)
-      state.audioPlayer.play()
-      setState({ ...state, isPlaying: true })
+    state.audioPlayer.pause()
+    state.audioPlayer = new Audio(state.track.file)
+    state.audioPlayer.play()
+    setState({ ...state, isPlaying: true })
     // if (index === state.currentTrackIndex) {
     //   togglePlay()
     // } else {
@@ -28,9 +28,6 @@ const useMusicPlayer = () => {
     setState({ ...state, isPlaying: !state.isPlaying })
   }
 
-  
-
- 
   return {
     playTrack,
     togglePlay,
