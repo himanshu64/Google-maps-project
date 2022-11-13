@@ -37,6 +37,7 @@ export default function LandingHome() {
       lng: 0,
     },
   })
+  console.log(process.env.NEXT_MAP_API_KEY)
 
   const [playTrack, setPlayTrack] = useState({
     // Get audio file in a variable
