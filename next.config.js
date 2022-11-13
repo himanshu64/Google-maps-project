@@ -54,7 +54,7 @@ const securityHeaders = [
 
 module.exports = withBundleAnalyzer({
   images: {
-    domains: ['storage.googleapis.com', 'localhost'], // <== Domain name
+    domains: ['storage.googleapis.com', 'localhost', 'google-maps-project.vercel.app'], // <== Domain name
   },
   reactStrictMode: true,
   pageExtensions: ['js', 'jsx', 'md', 'mdx'],
@@ -81,7 +81,8 @@ module.exports = withBundleAnalyzer({
         'react/jsx-runtime.js': 'preact/compat/jsx-runtime',
         react: 'preact/compat',
         'react-dom/test-utils': 'preact/test-utils',
-      })
+        'react-dom': 'preact/compat',
+     })
     }
 
     return config
