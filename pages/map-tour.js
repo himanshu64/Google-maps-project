@@ -48,17 +48,17 @@ export default function MapTour() {
                 ourAudio.pause()
               },
               content:
-                ' <div class="info-window">' +
+                ' <div class="info-window bg-white dark:bg-white">' +
                 ' <img src=' +
                 storyAudio[i].image_url +
                 '  class="h-[80] w-full rounded-md" alt="" />' +
-                ' <div  class="font-bold pt-2 text-xl">' +
+                ' <div  class="font-bold pt-2 text-xl text-black dark:text-black">' +
                 storyAudio[i].title +
                 '</div>' +
-                '<div  class="font-normal pt-2 text-xs">' +
+                '<div  class="font-normal pt-2 text-xs text-black dark:text-black">' +
                 storyAudio[i].summary +
                 '</div>' +
-                ' <button class="rounded-full bg-[#E1F1FF] mt-4 p-2 font-normal">' +
+                ' <button class="rounded-full bg-[#E1F1FF] mt-4 p-2 font-normal text-black dark:text-black">' +
                 Math.floor(storyAudio[i].duration_in_secs / 60) +
                 ' min</button>' +
                 ' <button style="display:none" class="rounded-full bg-[#E1F1FF] mt-4 p-2 font-normal">' +
