@@ -25,7 +25,7 @@ const StorySidebar = (props) => {
       <button
         onClick={onToggleNav}
         aria-label="Toggle Menu"
-        className="button-shadow relative z-40 mr-14  max-w-sm rounded-lg border border-gray-200 bg-white p-2 shadow-md dark:border-gray-700 dark:bg-gray-800"
+        className="button-shadow relative z-40 mr-14  max-w-sm rounded-lg border border-gray-200 bg-white p-2 shadow-md dark:border-white dark:bg-white"
       >
         <MusicIcon />
       </button>
@@ -74,8 +74,8 @@ const StorySidebar = (props) => {
               <div className="info-window-slider pb-6">
                 {' '}
                 <img src={story.image_url} className="h-[100] w-full rounded-md" alt="" />
-                <div className="pt-2 text-xl font-bold">{story.title}</div>
-                <div className="pt-2 text-xs font-normal">{story.summary}</div>
+                <div className="pt-2 text-xl font-bold text-black dark:text-black">{story.title}</div>
+                <div className="pt-2 text-xs font-normal text-black dark:text-black">{story.summary}</div>
                 <button className="mt-4 rounded-full bg-[#E1F1FF] p-2 font-normal">
                   {Math.floor(story.duration_in_secs / 60)} min
                 </button>

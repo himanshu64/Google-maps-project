@@ -51,7 +51,7 @@ export default function MapTour() {
                 ' <div class="info-window">' +
                 ' <img src=' +
                 storyAudio[i].image_url +
-                '  class="h-[100] w-full rounded-md" alt="" />' +
+                '  class="h-[80] w-full rounded-md" alt="" />' +
                 ' <div  class="font-bold pt-2 text-xl">' +
                 storyAudio[i].title +
                 '</div>' +
@@ -124,7 +124,7 @@ export default function MapTour() {
         <div className="flex justify-between pt-8">
           <Link
             href={'/'}
-            className="button-shadow relative z-50 ml-14 max-w-sm rounded-lg border border-gray-200 bg-white p-2 shadow-md dark:border-gray-700 dark:bg-gray-800"
+            className="button-shadow relative z-50 ml-14 max-w-sm rounded-lg  bg-white p-2 shadow-md dark:border-white dark:bg-white"
           >
             <HomeIcon />
           </Link>

@@ -208,7 +208,7 @@ export default function LandingHome() {
       </div> */}{' '}
         <>
           <div className="flex justify-between pt-8">
-            <div className="button-shadow relative z-50 ml-14 max-w-sm rounded-lg border border-gray-200 bg-white p-2 shadow-md dark:border-gray-700 dark:bg-gray-800">
+            <div className="button-shadow relative z-50 ml-14 max-w-sm rounded-lg border border-gray-200 bg-white p-2 shadow-md dark:border-white dark:bg-white">
               <HomeIcon />
             </div>
             <StorySidebar onStoryClick={onStoryClick} stories={audio.audios} />
